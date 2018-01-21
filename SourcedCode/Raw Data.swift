@@ -121,9 +121,9 @@ Children as young as 6 found working in mines
 1
 ***
 7
+Platinum
 South Africa
 Mines in South Africa
-Platinum
 Draining supply of very rare but useful metal
 Worker strikes do to poor conditions
 2
@@ -137,29 +137,48 @@ Child labor found at these mines
 1
 ***
 9
+Tantalum
 China
 Mines in China
-Tantalum
 Depletes a valuable resource
 Funds warfare in the Democratic Republic of Congo. Apple has pledged to fix this issue but suppliers are not 100% conflict free.
 2
 ***
 10
+Glass
 United States
 Corning Glass Factory in New York
-Glass
 Produces CO2 but Corning invest heavily in green technology
 Workers are unionized and paid fairly
 5
 ***
+11
+Gold
+South Africa
+Mines in South Africa
+Depletes an extremely valuable, useful, and rare resource
+Uses conflict mines
+1
 """
 
 // id, name, year, assembled, components (by id)
 var productData = """
 0
-iPhone X
-2017
+iPhone 7
+2016
 China
 0 1 2 3 4 5 6
 ***
+1
+Samsung S8
+2017
+0 1 2 3 4 5 6
+***
+iPad Pro 10.5"
+2017
+0 1 2 3 4 5 6
+***
+Dell XPS Laptop
+2014
+0 1 2 3 4 5 6
 """
