@@ -12,6 +12,7 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     var product = Product()
     
+    @IBOutlet weak var mapView: MapView!
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
@@ -57,6 +58,14 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
         averageRating = averageRating / numMaterials
         var finalRating = Int(averageRating.rounded())
         setRating(rating: finalRating)
+        
+        var countries = [String]()
+        for comp in product.components {
+            for mat in comp.materials {
+                countries.append(mat.origin)
+            }
+        }
+        mapView.countries = countries
         
     }
 

@@ -12,6 +12,8 @@
 		497974982014480400DD8F8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497974972014480400DD8F8C /* HomeViewController.swift */; };
 		4979749A20145DA500DD8F8C /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979749920145DA500DD8F8C /* Emoji.swift */; };
 		4979749C2014773000DD8F8C /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979749B2014773000DD8F8C /* ProductViewController.swift */; };
+		4979749E2015066600DD8F8C /* MarkerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979749D2015066600DD8F8C /* MarkerView.swift */; };
+		497974A02015068C00DD8F8C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979749F2015068C00DD8F8C /* MapView.swift */; };
 		A6092B742014880E00C4B0BB /* ComponentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6092B732014880E00C4B0BB /* ComponentViewController.swift */; };
 		A6092B7620149C3C00C4B0BB /* MatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6092B7520149C3C00C4B0BB /* MatViewController.swift */; };
 		A6FD2AC92013F52D004AD4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD2AC82013F52D004AD4E7 /* AppDelegate.swift */; };
@@ -30,6 +32,8 @@
 		497974972014480400DD8F8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4979749920145DA500DD8F8C /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		4979749B2014773000DD8F8C /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		4979749D2015066600DD8F8C /* MarkerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkerView.swift; sourceTree = "<group>"; };
+		4979749F2015068C00DD8F8C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		A6092B732014880E00C4B0BB /* ComponentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentViewController.swift; sourceTree = "<group>"; };
 		A6092B7520149C3C00C4B0BB /* MatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatViewController.swift; sourceTree = "<group>"; };
 		A6FD2AC52013F52D004AD4E7 /* SourcedCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SourcedCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +82,8 @@
 				A6FD2ADE20141ED2004AD4E7 /* Raw Data.swift */,
 				A6FD2ACA2013F52D004AD4E7 /* ViewController.swift */,
 				A6FD2ACC2013F52D004AD4E7 /* Main.storyboard */,
+				4979749D2015066600DD8F8C /* MarkerView.swift */,
+				4979749F2015068C00DD8F8C /* MapView.swift */,
 				A6092B732014880E00C4B0BB /* ComponentViewController.swift */,
 				A6092B7520149C3C00C4B0BB /* MatViewController.swift */,
 				4979749B2014773000DD8F8C /* ProductViewController.swift */,
@@ -173,9 +179,11 @@
 				A6FD2ACB2013F52D004AD4E7 /* ViewController.swift in Sources */,
 				4979749A20145DA500DD8F8C /* Emoji.swift in Sources */,
 				497974982014480400DD8F8C /* HomeViewController.swift in Sources */,
+				497974A02015068C00DD8F8C /* MapView.swift in Sources */,
 				497974942014466A00DD8F8C /* RoundedView.swift in Sources */,
 				A6FD2ADD2013FDED004AD4E7 /* Datatypes.swift in Sources */,
 				A6FD2AC92013F52D004AD4E7 /* AppDelegate.swift in Sources */,
+				4979749E2015066600DD8F8C /* MarkerView.swift in Sources */,
 				4979749C2014773000DD8F8C /* ProductViewController.swift in Sources */,
 				A6FD2ADB2013FDCF004AD4E7 /* Parser.swift in Sources */,
 			);
