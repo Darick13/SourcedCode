@@ -11,9 +11,9 @@ import Foundation
 
 func getProductList() -> [Product] {
     var products = [Product]()
-    var productLines = productData.components(separatedBy: "***")
-    var materialLines = materialData.components(separatedBy: "***")
-    var componentLines = componentData.components(separatedBy: "***")
+    var productLines = productData.components(separatedBy: "***\n")
+    var materialLines = materialData.components(separatedBy: "***\n")
+    var componentLines = componentData.components(separatedBy: "***\n")
 
     var materials = [Material]()
     for matString in materialLines {

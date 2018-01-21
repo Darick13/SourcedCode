@@ -99,6 +99,7 @@ Australias tight regulations make worker conditions safe and fair
 4
 Tungsten
 China
+Mines in China
 China is working towards reducing the environmental impact of tungsten mining
 Frequent inspections have improved working conditions
 4
@@ -150,6 +151,7 @@ Glass
 Produces CO2 but Corning invest heavily in green technology
 Workers are unionized and paid fairly
 5
+***
 """
 
 // id, name, year, assembled, components (by id)
@@ -158,6 +160,6 @@ var productData = """
 iPhone X
 2017
 China
-0
+0 1 2 3 4 5 6
 ***
 """

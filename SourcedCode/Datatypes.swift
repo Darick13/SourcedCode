@@ -54,6 +54,8 @@ struct Component {
 
 struct Material {
     var name:String
+    var origin:String
+    var source:String
     var eco:String
     var worker:String
     var rating:Int
@@ -74,12 +76,12 @@ struct Material {
         var parts = input.components(separatedBy: "\n")
 
         self.name = parts[1]
-        self.eco = parts[2]
-        self.worker = parts[3]
-        self.rating = Int(parts[4])!
-        
+        self.origin = parts[2]
+        self.source = parts[3]
+        self.eco = parts[4]
+        self.worker = parts[5]
+        self.rating = Int(parts[6])!
     }
-
 }
 
 
