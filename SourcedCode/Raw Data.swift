@@ -159,6 +159,14 @@ Mines in South Africa
 Depletes an extremely valuable, useful, and rare resource
 Uses conflict mines
 1
+***
+12
+Silver
+Chile
+Mines in Chile
+Depletes precious metal
+Funds corrupt governments and drug trade
+1
 """
 
 // id, name, year, assembled, components (by id)
