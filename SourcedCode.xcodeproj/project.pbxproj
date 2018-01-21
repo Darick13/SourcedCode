@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		497974942014466A00DD8F8C /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497974932014466A00DD8F8C /* RoundedView.swift */; };
+		49797496201447AF00DD8F8C /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49797495201447AF00DD8F8C /* SearchCell.swift */; };
+		497974982014480400DD8F8C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497974972014480400DD8F8C /* HomeViewController.swift */; };
+		4979749A20145DA500DD8F8C /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979749920145DA500DD8F8C /* Emoji.swift */; };
+		4979749C2014773000DD8F8C /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4979749B2014773000DD8F8C /* ProductViewController.swift */; };
 		A6FD2AC92013F52D004AD4E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD2AC82013F52D004AD4E7 /* AppDelegate.swift */; };
 		A6FD2ACB2013F52D004AD4E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD2ACA2013F52D004AD4E7 /* ViewController.swift */; };
 		A6FD2ACE2013F52D004AD4E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FD2ACC2013F52D004AD4E7 /* Main.storyboard */; };
@@ -15,10 +20,14 @@
 		A6FD2ADB2013FDCF004AD4E7 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD2ADA2013FDCF004AD4E7 /* Parser.swift */; };
 		A6FD2ADD2013FDED004AD4E7 /* Datatypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD2ADC2013FDED004AD4E7 /* Datatypes.swift */; };
 		A6FD2ADF20141ED2004AD4E7 /* Raw Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD2ADE20141ED2004AD4E7 /* Raw Data.swift */; };
-		A6FD2AE1201421C8004AD4E7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FD2AE0201421C8004AD4E7 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		497974932014466A00DD8F8C /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		49797495201447AF00DD8F8C /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		497974972014480400DD8F8C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4979749920145DA500DD8F8C /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		4979749B2014773000DD8F8C /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		A6FD2AC52013F52D004AD4E7 /* SourcedCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SourcedCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FD2AC82013F52D004AD4E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6FD2ACA2013F52D004AD4E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,7 +38,6 @@
 		A6FD2ADA2013FDCF004AD4E7 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		A6FD2ADC2013FDED004AD4E7 /* Datatypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datatypes.swift; sourceTree = "<group>"; };
 		A6FD2ADE20141ED2004AD4E7 /* Raw Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Raw Data.swift"; sourceTree = "<group>"; };
-		A6FD2AE0201421C8004AD4E7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +74,11 @@
 				A6FD2ADE20141ED2004AD4E7 /* Raw Data.swift */,
 				A6FD2ACA2013F52D004AD4E7 /* ViewController.swift */,
 				A6FD2ACC2013F52D004AD4E7 /* Main.storyboard */,
-				A6FD2AE0201421C8004AD4E7 /* HomeViewController.swift */,
+				4979749B2014773000DD8F8C /* ProductViewController.swift */,
+				4979749920145DA500DD8F8C /* Emoji.swift */,
+				49797495201447AF00DD8F8C /* SearchCell.swift */,
+				497974972014480400DD8F8C /* HomeViewController.swift */,
+				497974932014466A00DD8F8C /* RoundedView.swift */,
 				A6FD2ACF2013F52D004AD4E7 /* Assets.xcassets */,
 				A6FD2AD12013F52D004AD4E7 /* LaunchScreen.storyboard */,
 				A6FD2ADA2013FDCF004AD4E7 /* Parser.swift */,
@@ -149,11 +161,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6FD2ADF20141ED2004AD4E7 /* Raw Data.swift in Sources */,
+				49797496201447AF00DD8F8C /* SearchCell.swift in Sources */,
 				A6FD2ACB2013F52D004AD4E7 /* ViewController.swift in Sources */,
+				4979749A20145DA500DD8F8C /* Emoji.swift in Sources */,
+				497974982014480400DD8F8C /* HomeViewController.swift in Sources */,
+				497974942014466A00DD8F8C /* RoundedView.swift in Sources */,
 				A6FD2ADD2013FDED004AD4E7 /* Datatypes.swift in Sources */,
 				A6FD2AC92013F52D004AD4E7 /* AppDelegate.swift in Sources */,
+				4979749C2014773000DD8F8C /* ProductViewController.swift in Sources */,
 				A6FD2ADB2013FDCF004AD4E7 /* Parser.swift in Sources */,
-				A6FD2AE1201421C8004AD4E7 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H24QU28MK8;
+				DEVELOPMENT_TEAM = P44B5828F9;
 				INFOPLIST_FILE = SourcedCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Student.SourcedCode;
@@ -306,7 +322,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H24QU28MK8;
+				DEVELOPMENT_TEAM = P44B5828F9;
 				INFOPLIST_FILE = SourcedCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Student.SourcedCode;
