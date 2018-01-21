@@ -32,11 +32,13 @@ struct Product {
 }
 
 struct Component {
-    var name:String
-    var manufacturer:String
-    var country:String
-    var description:String
+    var name = ""
+    var manufacturer = ""
+    var country = ""
+    var description = ""
     var materials = [Material]()
+
+    init() {}
 
     // id, name, manufactuer, country, description, materials (by id)
     init(input:String, materials:[Material]) {
@@ -55,12 +57,12 @@ struct Component {
 }
 
 struct Material {
-    var name:String
-    var origin:String
-    var source:String
-    var eco:String
-    var worker:String
-    var rating:Int
+    var name = ""
+    var origin = ""
+    var source = ""
+    var eco = ""
+    var worker = ""
+    var rating = 0
 
     func getEmojiRating() -> String {
         switch rating {
