@@ -10,7 +10,7 @@ import UIKit
 
 class ProductViewController: UIViewController {
 
-    var product:Product? = nil
+    var product = Product()
     
     @IBOutlet weak var companyLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
@@ -35,7 +35,25 @@ class ProductViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        companyLabel.text = "Apple"
+        yearLabel.text = "\(product.year)"
+        countriesLabel.text = "53"
+        co2Label.text = "20 tons"
+        waterLabel.text = "2 gallons"
+        
+        var averageRating = 0.0
+        var numMaterials = 0.0
+        for comp in product.components {
+            for mat in comp.materials {
+                averageRating += Double(mat.rating)
+                numMaterials += 1.0
+            }
+        }
+        
+        averageRating = averageRating / numMaterials
+        var finalRating = Int(averageRating.rounded())
+        setRating(rating: finalRating)
+        
     }
 
     override func didReceiveMemoryWarning() {

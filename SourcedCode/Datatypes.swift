@@ -10,9 +10,9 @@ import Foundation
 
 
 struct Product {
-    var name:String
-    var year:Int
-    var assembled:String
+    var name = String()
+    var year = Int()
+    var assembled = String()
     var components = [Component]()
 
     // id, name, year, assembled, components (by id)
@@ -27,6 +27,8 @@ struct Product {
             self.components.append(components[Int(num)!])
         }
     }
+    
+    init() { }
 }
 
 struct Component {

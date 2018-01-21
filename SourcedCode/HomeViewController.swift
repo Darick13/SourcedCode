@@ -35,4 +35,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return 1
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! ProductViewController
+        destinationVC.product = products[tableView.indexPathForSelectedRow!.row]
+    }
+    
 }
