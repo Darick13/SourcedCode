@@ -24,6 +24,7 @@ struct Product {
 
         var compNums = parts[4].components(separatedBy: " ")
         for num in compNums {
+            if num == "" { continue }
             self.components.append(components[Int(num)!])
         }
     }

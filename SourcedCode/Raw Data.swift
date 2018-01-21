@@ -60,6 +60,27 @@ Vietnam
 Main housing for electronic structures
 1 4 5 6 7 3
 ***
+7
+Chipset
+Samsung
+South Korea
+Used for computer processing
+11 4 5 6 7 12
+***
+8
+Logic Board
+Samsung
+Vietnam
+Main housing for electronic structures
+11 4 5 6 7 12
+***
+9
+Capacitor
+Murata Manufacturing Co. Ltd.
+Japan
+Important electronic component for chips
+14
+***
 """
 
 // id, name, ecological effects, worker conditions, rating
@@ -121,9 +142,9 @@ Children as young as 6 found working in mines
 1
 ***
 7
+Platinum
 South Africa
 Mines in South Africa
-Platinum
 Draining supply of very rare but useful metal
 Worker strikes do to poor conditions
 2
@@ -137,29 +158,78 @@ Child labor found at these mines
 1
 ***
 9
+Tantalum
 China
 Mines in China
-Tantalum
 Depletes a valuable resource
 Funds warfare in the Democratic Republic of Congo. Apple has pledged to fix this issue but suppliers are not 100% conflict free.
 2
 ***
 10
+Glass
 United States
 Corning Glass Factory in New York
-Glass
 Produces CO2 but Corning invest heavily in green technology
 Workers are unionized and paid fairly
 5
+***
+11
+Gold
+South Africa
+Mines in South Africa
+Depletes an extremely valuable, useful, and rare resource
+Uses conflict mines
+1
+***
+12
+Silver
+Chile
+Mines in Chile
+Depletes precious metal
+Funds corrupt governments and drug trade
+1
+***
+13
+Tungsten
+Vietnam
+Mines in Vietnam
+Large amount of water and CO2 used
+Child labor has been reported
+1
+***
+14
+Tantalum
+China
+Mines in China
+Depletes a valuable resource
+Funds warfare in the Democratic Republic of Congo. Apple has pledged to fix this issue but suppliers are not 100% conflict free.
+1
 ***
 """
 
 // id, name, year, assembled, components (by id)
 var productData = """
 0
-iPhone X
+iPhone 7
+2016
+China
+0 1 2 3 4 5 6
+***
+1
+Samsung S8
+2017
+South Korea
+0 1 2 3 4 7 8
+***
+2
+iPad Pro 10.5"
 2017
 China
 0 1 2 3 4 5 6
 ***
+3
+Dell XPS Laptop
+2014
+China
+0 1 2 9 4 7 8
 """
