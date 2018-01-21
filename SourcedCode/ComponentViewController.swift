@@ -10,8 +10,13 @@ import UIKit
 
 class ComponentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     var copo:Component = Component()
 
+    
+    
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var manufacturerLabel: UILabel!
     @IBOutlet weak var assembledLable: UILabel!
     @IBOutlet weak var descriptionLable: UILabel!
@@ -33,6 +38,7 @@ class ComponentViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        titleLabel.text = copo.name
         manufacturerLabel.text = copo.manufacturer
         assembledLable.text = copo.country
         descriptionLable.text = copo.description
@@ -72,14 +78,19 @@ class ComponentViewController: UIViewController, UITableViewDataSource, UITableV
         navigationController!.popViewController(animated: true)
     }
     
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "toMat" {
+            let destinationVC = segue.destination as! MatViewController
+            destinationVC.mat = copo.materials[tableView.indexPathForSelectedRow!.row]
+        } else {
+            print("nah")
+        }
+        
     }
-    */
+ 
 
 }

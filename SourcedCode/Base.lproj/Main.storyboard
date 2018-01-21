@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gDA-Xs-lB7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gDA-Xs-lB7">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -28,7 +28,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="am5-r2-fVd">
-                                            <rect key="frame" x="16" y="0.0" width="344" height="43.5"/>
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -114,7 +114,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBc-0K-7E4">
-                                                    <rect key="frame" x="8" y="11" width="359" height="22"/>
+                                                    <rect key="frame" x="15" y="11" width="345" height="22"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.6705882352941176" green="0.6588235294117647" blue="0.70196078431372544" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -139,6 +139,12 @@
                                     <outlet property="delegate" destination="kYJ-Nm-dGW" id="MYn-Z8-amu"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" the quick brown fox" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAY-fb-dwp">
+                                <rect key="frame" x="16" y="20" width="221" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.25101244449615479" green="0.24223613739013672" blue="0.28777506947517395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -149,10 +155,12 @@
                             <constraint firstItem="NwP-uf-ldT" firstAttribute="trailing" secondItem="RA8-sO-Q6M" secondAttribute="trailing" id="Ccc-kE-eRh"/>
                             <constraint firstItem="6Vk-qx-EUl" firstAttribute="leading" secondItem="RA8-sO-Q6M" secondAttribute="leading" constant="16" id="KwB-Jh-dys"/>
                             <constraint firstItem="NwP-uf-ldT" firstAttribute="top" secondItem="6Vk-qx-EUl" secondAttribute="bottom" constant="7.5" id="R5k-RO-XPM"/>
+                            <constraint firstItem="fAY-fb-dwp" firstAttribute="top" secondItem="RA8-sO-Q6M" secondAttribute="top" id="TkO-sU-NqP"/>
                             <constraint firstItem="6Vk-qx-EUl" firstAttribute="centerY" secondItem="IIY-lc-HTs" secondAttribute="centerY" id="buK-7t-KhM"/>
                             <constraint firstItem="evU-YS-Q3v" firstAttribute="leading" secondItem="RA8-sO-Q6M" secondAttribute="leading" constant="16" id="d6r-5v-Uej"/>
                             <constraint firstItem="NwP-uf-ldT" firstAttribute="leading" secondItem="RA8-sO-Q6M" secondAttribute="leading" id="dZZ-Tp-anM"/>
                             <constraint firstItem="evU-YS-Q3v" firstAttribute="centerY" secondItem="IIY-lc-HTs" secondAttribute="centerY" constant="-146.5" id="hgm-Zo-R6x"/>
+                            <constraint firstItem="fAY-fb-dwp" firstAttribute="leading" secondItem="RA8-sO-Q6M" secondAttribute="leading" constant="16" id="nGq-9E-oUf"/>
                             <constraint firstItem="RA8-sO-Q6M" firstAttribute="trailing" secondItem="evU-YS-Q3v" secondAttribute="trailing" constant="16" id="xfK-Na-9xs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RA8-sO-Q6M"/>
@@ -433,6 +441,7 @@
                         <outlet property="img_4" destination="aaa-dX-g2P" id="Occ-Tl-yGG"/>
                         <outlet property="img_5" destination="2ub-0j-oGf" id="kRT-yg-eYH"/>
                         <outlet property="tableView" destination="VmU-yH-ZQs" id="ZPs-lv-i3i"/>
+                        <outlet property="titleLabel" destination="1Ez-tL-qtY" id="3WY-eu-3dT"/>
                         <outlet property="waterLabel" destination="GRm-c5-tQq" id="MmU-DE-YND"/>
                         <outlet property="yearLabel" destination="nOW-8m-tng" id="kIR-9q-hL0"/>
                     </connections>
@@ -493,7 +502,7 @@
                                             <color key="textColor" red="0.1960784314" green="0.70588235290000001" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hX7-gj-JBg">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="the quick brown fox jumps over the lazy dog" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hX7-gj-JBg">
                                             <rect key="frame" x="196" y="177" width="171" height="22"/>
                                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                                             <color key="textColor" red="0.6705882353" green="0.6588235294" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -641,6 +650,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="titleLabel" destination="sya-22-LnY" id="EYB-C3-CHV"/>
+                                            <segue destination="yVd-6D-q6o" kind="show" identifier="toMat" id="9VS-VE-BdC"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -668,6 +678,8 @@
                         <outlet property="img_4" destination="sBM-gb-GgN" id="h2h-Qd-wks"/>
                         <outlet property="img_5" destination="Hpw-cX-ppG" id="OtN-St-duM"/>
                         <outlet property="manufacturerLabel" destination="yvC-RD-ZR0" id="BZ0-9P-riX"/>
+                        <outlet property="tableView" destination="rQx-nq-Z0e" id="3SN-au-4Bh"/>
+                        <outlet property="titleLabel" destination="rI9-Ar-woy" id="CXu-dy-J1j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t9x-HA-aVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -718,7 +730,7 @@
         <!--Mat View Controller-->
         <scene sceneID="mS7-tQ-4hk">
             <objects>
-                <viewController id="yVd-6D-q6o" customClass="MatViewController" sceneMemberID="viewController">
+                <viewController id="yVd-6D-q6o" customClass="MatViewController" customModule="SourcedCode" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X5X-jJ-adN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -791,9 +803,12 @@
                                             <state key="normal" title="✕">
                                                 <color key="titleColor" red="0.6705882353" green="0.6588235294" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
+                                            <connections>
+                                                <action selector="exit:" destination="yVd-6D-q6o" eventType="touchUpInside" id="ptr-WJ-VXU"/>
+                                            </connections>
                                         </button>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPR-l0-b4A">
-                                            <rect key="frame" x="0.0" y="281" width="375" height="130"/>
+                                            <rect key="frame" x="0.0" y="304" width="375" height="130"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Responsibility Score" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oi8-dw-nl6">
                                                     <rect key="frame" x="8" y="8" width="170" height="21"/>
@@ -859,8 +874,8 @@
                                             <color key="textColor" red="0.6705882353" green="0.6588235294" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Materials" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNb-b9-Erv">
-                                            <rect key="frame" x="8" y="419" width="359" height="23"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNb-b9-Erv">
+                                            <rect key="frame" x="8" y="442" width="359" height="0.0"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                             <color key="textColor" red="0.6705882353" green="0.6588235294" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
@@ -933,10 +948,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="yVd-6D-q6o" id="2xE-fz-ZNQ"/>
-                                    <outlet property="delegate" destination="yVd-6D-q6o" id="myB-p7-Mcf"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.25101244449999999" green="0.2422361374" blue="0.28777506949999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -949,13 +960,11 @@
                         <viewLayoutGuide key="safeArea" id="dqV-af-1BR"/>
                     </view>
                     <connections>
-                        <outlet property="assembledLable" destination="ez4-CU-cGU" id="aFb-4l-2aV"/>
-                        <outlet property="descriptionLable" destination="NZ1-42-YI1" id="sUJ-Ko-pdd"/>
                         <outlet property="envrLabel" destination="NZ1-42-YI1" id="Mla-g4-h69"/>
                         <outlet property="laborConditionLabel" destination="azl-Kz-FPp" id="Dw4-fe-FFj"/>
-                        <outlet property="manufacturerLabel" destination="1Bb-2f-baU" id="II2-rE-PGy"/>
                         <outlet property="matLabel" destination="1Bb-2f-baU" id="P4J-6R-ksJ"/>
                         <outlet property="sourceLabel" destination="ez4-CU-cGU" id="RVU-qW-iZD"/>
+                        <outlet property="titleLabel" destination="RSL-la-YCk" id="qYP-DR-rX6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TUO-92-6de" userLabel="First Responder" sceneMemberID="firstResponder"/>

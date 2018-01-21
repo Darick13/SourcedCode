@@ -12,6 +12,8 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     var product = Product()
     
+    
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var companyLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
@@ -36,6 +38,7 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        titleLabel.text = product.name
         companyLabel.text = "Apple"
         yearLabel.text = "\(product.year)"
         countriesLabel.text = "53"
