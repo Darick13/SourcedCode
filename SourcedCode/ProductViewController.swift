@@ -76,6 +76,11 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
         return 1
     }
     
+    @IBAction func exit(_ sender: Any) {
+        navigationController!.popViewController(animated: true)
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destinationVC = segue.destination as! ComponentViewController
         destinationVC.copo = product.components[tableView.indexPathForSelectedRow!.row]
