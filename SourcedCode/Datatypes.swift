@@ -64,6 +64,9 @@ struct Material {
     var worker = ""
     var rating = 0
 
+    init() {}
+
+    
     func getEmojiRating() -> String {
         switch rating {
             case 1: return "😭"
