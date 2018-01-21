@@ -15,6 +15,7 @@ class ComponentViewController: UIViewController, UITableViewDataSource, UITableV
     var copo:Component = Component()
 
     
+    @IBOutlet weak var mapView: MapView!
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var manufacturerLabel: UILabel!
@@ -50,6 +51,12 @@ class ComponentViewController: UIViewController, UITableViewDataSource, UITableV
         averageRating /= Double(copo.materials.count)
         let finalRating = Int(averageRating.rounded())
         setRating(rating: finalRating)
+        
+        var countries = [String]()
+        for mat in copo.materials {
+            countries.append(mat.origin)
+        }
+        mapView.countries = countries
         
         // Do any additional setup after loading the view.
     }
