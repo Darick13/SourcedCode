@@ -16,7 +16,49 @@ Battery
 Samsung
 South Korea
 Stores power to run device.
-0
+0 6 1
+***
+1
+Case
+Apple
+China
+Is used for phone housing
+2
+***
+2
+Screen
+Corning
+United States
+Provides a surface for the display
+10
+***
+3
+Capacitor
+Murata Manufacturing Co. Ltd.
+Japan
+Important electronic component for chips
+9
+***
+4
+Display
+Samsung
+South Korea
+Display for touch devices and computers
+5 6
+***
+5
+Chipset
+Samsung
+South Korea
+Used for computer processing
+1 4 5 6 7 3
+***
+6
+Logic Board
+Samsung
+Vietnam
+Main housing for electronic structures
+1 4 5 6 7 3
 ***
 """
 
@@ -26,8 +68,8 @@ var materialData = """
 Lithium
 Australia
 Mines in Australia
-Australia uses guidlines to reduce risk of enviromental impact
-Dangerous metal, hazardous to workers but Autralia mines use strict safety guidlines
+Australia uses guidelines to reduce risk of environmental impact
+Dangerous metal, hazardous to workers but Australia mines use strict safety guidelines
 5
 ***
 1
@@ -42,29 +84,29 @@ Uses conflict free mines
 Aluminum
 China
 Mines in China
-Responisbly mined, reduced impact on enviroment do to new mining techniques
-Warkers overworked
+Responsibly mined, reduced impact on environment do to new mining techniques
+Workers overworked
 4
 ***
 3
 Silver
 Australia
-MInes in Australia
-Depletes precius metal
-Australias tight regulations make worker condtions safe and ethical
-4
+Mines in Australia
+Depletes precious metal
+Australias tight regulations make worker conditions safe and fair
+3
 ***
 4
 Tungsten
 China
-China is working towards reducing the evironmental impact of tungsten mining
+China is working towards reducing the environmental impact of tungsten mining
 Frequent inspections have improved working conditions
 4
 ***
 5
+Copper
 Chile
 Mines in Chile
-Copper
 Large amount of CO2 production and water use do to outdated mining technology
 Worker strikes do to unfair compensation
 3
@@ -83,13 +125,13 @@ Mines in South Africa
 Platinum
 Draining supply of very rare but useful metal
 Worker strikes do to poor conditions
-3
+2
 ***
 8
 Cobalt
 Congo
 Mines in Congo
-bad for the environment.
+Large amount of CO2 produced
 Child labor found at these mines
 1
 ***
@@ -98,11 +140,17 @@ China
 Mines in China
 Tantalum
 Depletes a valuable resource
-Funds warefare in the Democratic Republic of Congo. Apple has pledged to fix this issue but supliers are not 100% conflict free.
+Funds warfare in the Democratic Republic of Congo. Apple has pledged to fix this issue but suppliers are not 100% conflict free.
 2
 ***
+10
+United States
+Corning Glass Factory in New York
+Glass
+Produces CO2 but Corning invest heavily in green technology
+Workers are unionized and paid fairly
+5
 """
-
 
 // id, name, year, assembled, components (by id)
 var productData = """
