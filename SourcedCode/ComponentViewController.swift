@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ComponentViewController: UIViewController {
+class ComponentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var copo:Component = Component()
 
@@ -32,7 +32,20 @@ class ComponentViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return copo.materials.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! SearchCell
+        cell.titleLabel.text = copo.materials[indexPath.row].name
+        return cell
+    }
+    
     /*
     // MARK: - Navigation
 

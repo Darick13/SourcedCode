@@ -12,6 +12,7 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     var product = Product()
     
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var companyLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var countriesLabel: UILabel!
@@ -73,6 +74,11 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! ComponentViewController
+        destinationVC.copo = product.components[tableView.indexPathForSelectedRow!.row]
     }
 
 }
