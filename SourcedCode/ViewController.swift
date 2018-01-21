@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var products = [Product]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        //read in values here.
+        products = getProductList()
+        print("did it work?")
+
     }
 
     override func didReceiveMemoryWarning() {
