@@ -18,6 +18,21 @@ class MatViewController: UIViewController {
     @IBOutlet weak var envrLabel: UILabel!
     @IBOutlet weak var laborConditionLabel: UILabel!
 
+   @IBOutlet weak var img_5: UIImageView!
+   @IBOutlet weak var img_4: UIImageView!
+   @IBOutlet weak var img_3: UIImageView!
+   @IBOutlet weak var img_2: UIImageView!
+   @IBOutlet weak var img_1: UIImageView!
+
+
+   func setRating(rating:Int) {
+      img_5.image = (rating == 5) ? #imageLiteral(resourceName: "5_active") : #imageLiteral(resourceName: "5_inactive")
+      img_4.image = (rating == 4) ? #imageLiteral(resourceName: "4_active") : #imageLiteral(resourceName: "4_inactive")
+      img_3.image = (rating == 3) ? #imageLiteral(resourceName: "3_active") : #imageLiteral(resourceName: "3_inactive")
+      img_2.image = (rating == 2) ? #imageLiteral(resourceName: "2_active") : #imageLiteral(resourceName: "2_inactive")
+      img_1.image = (rating == 1) ? #imageLiteral(resourceName: "1_active") : #imageLiteral(resourceName: "1_inactive")
+   }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +42,8 @@ class MatViewController: UIViewController {
         envrLabel.text = mat.eco
         laborConditionLabel.text = mat.worker
 
+         setRating(rating: mat.rating)
+      
         // Do any additional setup after loading the view.
     }
 
